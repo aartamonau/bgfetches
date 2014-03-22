@@ -222,7 +222,7 @@ func main() {
 
 		getsStart := time.Now()
 		runGets(sink)
-		log.Printf("Processed all sets (%f per second)",
+		log.Printf("Processed all gets (%f per second)",
 			float64(*numItems) / time.Since(getsStart).Seconds())
 	} else {
 		log.Printf("Have nothing to do. Exiting")
